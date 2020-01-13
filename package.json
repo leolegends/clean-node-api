@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leolegends/clean-node-api/issues"
   },
-  "homepage": "https://github.com/leolegends/clean-node-api#readme"
+  "homepage": "https://github.com/leolegends/clean-node-api#readme",
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
 }
