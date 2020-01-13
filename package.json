@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leolegends/clean-node-api.git"
@@ -17,6 +27,8 @@
   },
   "homepage": "https://github.com/leolegends/clean-node-api#readme",
   "devDependencies": {
+    "husky": "^4.0.7",
+    "lint-staged": "^9.5.0",
     "standard": "^14.3.1"
   }
 }
